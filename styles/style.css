@@ -137,9 +137,6 @@ text-decoration: none;
 
 /* Блок digits */
 
-.digits {
-
-}
 .digits_padding_100 {
   padding: 100px 0px;
 }
@@ -172,14 +169,10 @@ text-decoration: none;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.table_margin-bot_100 {
-  margin-bottom: 100px;
-}
 
 .table__cell {
   width: 250px;
   list-style-type: none;
-  list-style: ;
 }
 
 .table__cell_margin-top_60 {
@@ -197,6 +190,63 @@ text-decoration: none;
   font-size: 18px;
   font-weight: normal;
   margin-top: 20px;
+}
+
+/* Блок feynman */
+
+.feynman {
+  height: 890px;
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+.feynman__title {
+  width: 648px;
+  margin: 0 auto;
+  text-align: center;
+
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+
+  position: relative;
+  z-index: 1;
+}
+.feynman__title_padding_100 {
+  padding-top: 100px;
+}
+
+.feynman__subtitle {
+  margin-top: 70px;
+  text-align: center;
+
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+
+  position: relative;
+  z-index: 1;
+}
+
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  z-index: 1;
+}
+
+.feynman__img {
+  width: 867px;
+  height: 637px;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */
