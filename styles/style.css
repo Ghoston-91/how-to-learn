@@ -22,13 +22,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
   display: flex;
   position: relative;
   background-color: #f2f2f2;
-
 }
 
 .logo {
   width: 228px;
   height: 32px;
-
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -143,7 +141,7 @@ text-decoration: none;
 
 /* Блок digits */
 
-.digits_padding_100 {
+.digits {
   padding: 100px 0px;
 }
 
@@ -177,9 +175,6 @@ text-decoration: none;
 .table__cell {
   width: 250px;
   list-style-type: none;
-}
-
-.table__cell_margin-top_60 {
   margin-top: 60px;
 }
 
@@ -236,6 +231,7 @@ text-decoration: none;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  text-decoration: none;
 
   position: absolute;
   right: 48px;
@@ -263,14 +259,6 @@ text-decoration: none;
   color: white;
 }
 
-.section-title_theme_dark {
-
-}
-
-.section-subtitle_theme_dark {
-
-}
-
 .table_theme_dark {
   position: relative;
   z-index: 1;
@@ -279,13 +267,6 @@ text-decoration: none;
 .table__cell_theme_dark {
   width: 200px;
   margin-top: 80px;
-}
-.table__heading_theme_dark {
-
-}
-
-.table__text_theme_dark {
-
 }
 
 .kaufman__triangle {
@@ -296,6 +277,16 @@ text-decoration: none;
   top: 0;
   z-index: 0;
 }
+/* Не использвал ниже модификаторы, т.к для элементов
+ранее уже прописаны такие же отступы и размеры :)
+
+.section-title_theme_dark
+.section-subtitle_theme_dark
+.table__heading_theme_dark
+.table__text_theme_dark
+
+*/
+
 
 /* блок footer */
 
@@ -307,12 +298,20 @@ text-decoration: none;
 
 .footer__columns {
   width: 90%;
+  min-height: 350px;
   display: flex;
   justify-content: space-between;
-  margin: auto;
+}
+.footer__columns_padding_top-bot {
+  margin: 0 auto;
+  padding: 60px 0 40px;
+  box-sizing: border-box;
 }
 
 .footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex-basis: 711px;
 }
 
@@ -325,4 +324,37 @@ text-decoration: none;
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
+  margin: 18px 0;
+}
+
+.footer__column_content_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer__column-links {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 16px;
+  justify-content: space-between;
+}
+
+.footer__column-link {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }
