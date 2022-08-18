@@ -41,7 +41,9 @@
 @import url('./content/cards/__title/cards__title.css');
 
 /* Блок video */
-
+@import url('./content/video/video.css');
+@import url('./content/video/__iframes/video__iframes.css');
+@import url('./content/video/__iframe/video__iframe.css');
 
 
 
